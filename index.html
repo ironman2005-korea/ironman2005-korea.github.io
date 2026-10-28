@@ -50,7 +50,9 @@
   details ul{border-top:1px solid var(--line);}
 
   /* 저서 */
-  .books{display:flex;gap:14px;}
+  .books{display:flex;gap:14px;align-items:flex-start;}
+  .coverimg{width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 4px 12px rgba(20,39,63,.18);}
+  a.shoplink{color:var(--navy);font-weight:700;text-decoration:none;}
   .book{flex:1;}
   .cover{aspect-ratio:3/4.2;border-radius:6px;padding:16px 13px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;box-shadow:0 4px 12px rgba(20,39,63,.18);}
   .cover.c1{background:linear-gradient(160deg,#1d3557,#2f5d8a);}
@@ -158,18 +160,12 @@
     <h2>저서와 칼럼</h2>
     <div class="books">
       <div class="book">
-        <div class="cover c1">
-          <div class="ct">AI와 함께하는<br>독서토론</div>
-          <div class="ca">김영균 지음</div>
-        </div>
-        <div class="meta">전자책 · 작가와 · 2024</div>
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=354741675" target="_blank" rel="noopener"><img class="coverimg" src="assets/book-ai.jpg" alt="AI와 함께하는 독서토론 표지"></a>
+        <div class="meta">《AI와 함께하는 독서토론》<br>전자책 · 작가와 · 2024<br><a class="shoplink" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=354741675" target="_blank" rel="noopener">알라딘에서 보기 ↗</a></div>
       </div>
       <div class="book">
-        <div class="cover c2">
-          <div class="ct">감사</div>
-          <div class="ca">김영균 지음</div>
-        </div>
-        <div class="meta">전자책 · 알라딘 판매 중</div>
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=371803571" target="_blank" rel="noopener"><img class="coverimg" src="assets/book-thanks.jpg" alt="감사 표지"></a>
+        <div class="meta">《감사》<br>전자책 · 작가와<br><a class="shoplink" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=371803571" target="_blank" rel="noopener">알라딘에서 보기 ↗</a></div>
       </div>
     </div>
     <div class="column-box">
